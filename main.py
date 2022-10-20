@@ -21,12 +21,17 @@ class Main(QMainWindow, FORM_CLASS):
     def mki_report(self):
         r = Report()
         r.agregate_storage_type(r.mki, 15, "MKI", "S:\Warehouse dept\Inventory control\Reporting and dashboards\Cycle_Count\Reports_CycleCount\MKI\\"+"MKI_" + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p") + '.pdf') 
+        print(r.mki.describe)
         print("Report Generated")
     def jts1_report(self):
         r = Report()
         r.agregate_storage_type(r.jts1, 10, "JTS1", "S:\Warehouse dept\Inventory control\Reporting and dashboards\Cycle_Count\Reports_CycleCount\JTS1\\"+"JTS1_" + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p") + '.pdf')
+        print(r.jts1.describe)
+        print("Report Generated")
     def jts2_report(self):
         r = Report()
+        print(r.jts2.describe)
+        print("Report Generated")
         r.agregate_storage_type(r.jts2, 10, "JTS2", "S:\Warehouse dept\Inventory control\Reporting and dashboards\Cycle_Count\Reports_CycleCount\JTS2\\"+"JTS2_" + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p") + '.pdf')
 
 def main():
