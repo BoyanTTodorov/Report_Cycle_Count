@@ -1,7 +1,5 @@
 import pandas as pd
 import sqlite3
-#ModuleNotFoundError: No module named 'matplotlib.backends.backend_pdf
-import matplotlib.backends.backend_pdf
 import matplotlib.pyplot as plt 
 
 class Report:
